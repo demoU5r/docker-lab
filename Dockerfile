@@ -3,3 +3,11 @@ FROM debian:jessie-slim
 
 # This means that commands will run in the right directory on the host, because /code is mapped in the docker-compose.yml file.
 WORKDIR /code
+
+ADD ./hello.ml /code/
+ADD ./run.sh /code/
+
+RUN ["apt-get", "update", "-y"]
+RUN ["apt", "install", "ocaml", "-y"]
+
+CMD /code/run.sh

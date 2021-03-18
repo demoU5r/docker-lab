@@ -1,0 +1,60 @@
+ 1968  git clone git@github.com:demoU5r/docker-lab.git
+ 1969  cd docker-lab/
+ 1970  sudo docker ps
+ 1971  sudo docker ps -a
+ 1972  sudo docker ps 
+ 1973  docker rm -f $(docker ps -a -q)
+ 1974  sudo docker rm -f $(docker ps -a -q)
+ 1975  sudo docker rm -f $(sudo docker ps -a -q)
+ 1976  docker ps -q
+ 1977  sudo -i
+ 1978  git clone git@github.com:ivanmoore/docker-lab.git
+ 1979  cd docker-lab/
+ 1980  docker
+ 1981  docker run -it debian:jessie-slim bash
+ 1982  sudo docker run -it debian:jessie-slim bash
+ 1983  docker run -d -p 9000:80 --name webserver nginx
+ 1984  sudo docker run -d -p 9000:80 --name webserver nginx
+ 1985  docker stop webserver
+ 1986  sudo docker stop webserver
+ 1987  sudo docker run -d -p 9001:80  nginx
+ 1988  sudo docker run -d -p 9002:80  nginx
+ 1989  docker images
+ 1990  sudo docker images
+ 1991  sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+ 1992  sudo chmod +x /usr/local/bin/docker-compose
+ 1993  docker-compose 
+ 1994  docker-compose run lab ./run.sh
+ 1995  sudo docker-compose run lab ./run.sh
+ 1996  docker build .
+ 1997  sudo docker build .
+ 1998  docker images
+ 1999  sudo -i
+ 2000  sudo docker images
+ 2001  sudo docker build . --tag michael:04.01
+ 2002  sudo docker images
+ 2003  sudo docker run michael
+ 2004  sudo docker run michael:04.01
+ 2005  sudo docker build . --tag michael:04.02
+ 2006  sudo docker run michael:04.02
+ 2007  sudo docker-compose run lab ./run.sh
+ 2008  sudo docker images rm michael
+ 2009  sudo docker images ls
+ 2010  sudo docker images ls -a
+ 2011  sudo docker images
+ 2012  sudo docker images rm 92
+ 2013  sudo docker rmi michael:04.02
+ 2014  sudo docker rmi -f michael:04.02
+ 2015  sudo docker images
+ 2016  sudo docker rmi -f michael:04.01
+ 2017  sudo docker images
+ 2018  sudo docker rmi -f 70
+ 2019  sudo docker images
+ 2020  sudo docker-compose run lab ./run.sh
+ 2021  docker images
+ 2022  sudo docker images
+ 2023  sudo docker rmi -f 4ea
+ 2024  sudo docker-compose run lab ./run.sh
+ 2025  sudo docker images
+ 2026  history
+ 2027  history >> docker_command_history.txt

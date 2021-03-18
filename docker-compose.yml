@@ -3,5 +3,6 @@ version: '2'
 services:
   lab:              # This is just a name - it is used in our docker-compose command.
     build: .        # Build an image using the Dockerfile in directory "."
+    entrypoint: /code/run.sh # Important: Remove old existing images when running docker-compose run
     volumes:
       - .:/code     # Map the directory "." on the host into "/code" in the container.
